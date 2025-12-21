@@ -7,19 +7,33 @@ The workflow is suitable for generating annotated variant calls from short-read 
 # Workflow summary
 
 1. Input:
+   
       Raw paired-end FASTQ files.
-2. Quality Control:
+   
+3. Quality Control:
+   
       Initial quality assessment of raw reads
-3. Read Trimming:
+   
+5. Read Trimming:
+   
       Removal of low-quality bases and adapters
-4. Alignment:
+   
+7. Alignment:
+   
       FASTQ → SAM using BWA-MEM
-5. Post-alignment Processing:
+   
+9. Post-alignment Processing:
+    
       SAM → BAM conversion
+   
       Sorting and indexing using samtools
-6. Variant Calling:
+   
+11. Variant Calling:
+    
       SNP and small INDEL detection using FreeBayes
-7. Variant Annotation:
+    
+13. Variant Annotation:
+    
       Functional annotation using SnpEff
 
 # Tools used
