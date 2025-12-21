@@ -20,11 +20,11 @@ The workflow is suitable for generating annotated variant calls from short-read 
    
 7. Alignment:
    
-      FASTQ → SAM using BWA-MEM
+      FASTQ to SAM using BWA-MEM
    
 9. Post-alignment Processing:
     
-      SAM → BAM conversion
+      SAM to BAM conversion
    
       Sorting and indexing using samtools
    
