@@ -37,10 +37,14 @@ snpEff
 
 # Input:
 Paired-end FASTQ file
+
 Reference genome FASTA
 
 # Output:
 sam file
+
 sorted and indexed BAM files
+
 Variant - VCF files
+
 Annotated VCF files
