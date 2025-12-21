@@ -24,10 +24,15 @@ The workflow is suitable for generating annotated variant calls from short-read 
 
 # Tools used
 Nextflow DSL2
+
 Docker
+
 BWA-MEM
+
 SAMTOOLS
+
 FREEBAYES
+
 snpEff
 
 # Input:
