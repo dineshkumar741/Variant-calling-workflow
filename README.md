@@ -62,3 +62,5 @@ sorted and indexed BAM files
 Variant - VCF files
 
 Annotated VCF files
+
+The original files cannot be uploaded due to file sizes being too big. However, reads.vcf and reads_annotated.vcf files which carry only a small portion of the result, not the complete results are uploaded.
