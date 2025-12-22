@@ -63,4 +63,4 @@ Variant - VCF files
 
 Annotated VCF files
 
-The original files cannot be uploaded due to file sizes being too big. However, reads.vcf and reads_annotated.vcf files which carry only a small portion of the result, not the complete results are uploaded.
+Full results are not included due to their large file sizes. Only vcf files reperesenting a small subset of the results are uploaded for demonstration purposes.
