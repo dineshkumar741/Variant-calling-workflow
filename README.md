@@ -1,8 +1,12 @@
+# Task-3
+
 # A simplified Nextflow pipeline for variant calling
 This repository contains a Nextflow-based bioinformatics workflow for processing raw paired-end FASTQ files through alignment, variant calling, and annotation.
 The pipeline is containerized using Docker to ensure reproducibility, portability, and ease of use.
 
 The workflow is suitable for generating annotated variant calls from short-read sequencing data and can be integrated into larger data portals or downstream analysis systems.
+
+
 
 # Workflow
 
@@ -10,29 +14,31 @@ The workflow is suitable for generating annotated variant calls from short-read 
    
       Raw paired-end FASTQ files.
    
-3. Quality Control:
+2. Quality Control:
    
       Initial quality assessment of raw reads
    
-5. Read Trimming:
+3. Read Trimming:
    
       Removal of low-quality bases and adapters
+
+   step 1,2,3 were not performed as they were not required for this project. 
    
-7. Alignment:
+4. Alignment:
    
       FASTQ to SAM using BWA-MEM
    
-9. Post-alignment Processing:
+5. Post-alignment Processing:
     
       SAM to BAM conversion
    
       Sorting and indexing using samtools
    
-11. Variant Calling:
+6. Variant Calling:
     
       SNP and small INDEL detection using FreeBayes
     
-13. Variant Annotation:
+7. Variant Annotation:
     
       Functional annotation using SnpEff
 
