@@ -1,4 +1,4 @@
-# A-simplified Nextflow pipeline for variant calling
+# A simplified Nextflow pipeline for variant calling
 This repository contains a Nextflow-based bioinformatics workflow for processing raw paired-end FASTQ files through alignment, variant calling, and annotation.
 The pipeline is containerized using Docker to ensure reproducibility, portability, and ease of use.
 
