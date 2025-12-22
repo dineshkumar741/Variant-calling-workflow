@@ -4,7 +4,7 @@ The pipeline is containerized using Docker to ensure reproducibility, portabilit
 
 The workflow is suitable for generating annotated variant calls from short-read sequencing data and can be integrated into larger data portals or downstream analysis systems.
 
-# Workflow summary
+# Workflow
 
 1. Input:
    
