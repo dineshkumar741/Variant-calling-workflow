@@ -57,9 +57,9 @@ snpEff
 
 # Nextflow
 Before srunning the workflow, make sure to configure the nextflow and then docker, It can be challenging sometime especially if you are new to nextflow and docker. Once you have set up your system with both, it is very easy to run your workflows.
-Further, snpEff.jar, datasets, index files, .config files need to be in the same directory or specfify the path in the workflow. Then, run main.nf in the terminal. It is very likely that you will get errors at different steps when the running the workflow first time, lookt at them carefully, most of them are due incomplete configuration of nextflow or docker, and your machine configuration also matters when working on large datasets. This is a very simple workflow, however, you are always welcome to text me if you stuck at any point. 
+Further, snpEff.jar, datasets, index files, and .config files need to be in the same directory or specfify the path in the workflow. Then, run main.nf in the terminal. It is very likely that you will get errors at different steps when the running the workflow first time, just look at them carefully, most of them are due to incomplete configuration of nextflow or docker, and your machine configuration also matters when working on large datasets. This is a very simple workflow, but you are always welcome to text me if stuck at any point. 
 
-The workflow starts with alignment and completes at annotation pat by creating annotate.vcf file. So that means initial steps such as quality checks including trimming and genome indexing is missing . As the aim of this project is to work on synthetic datasets, and hence, quaility check wasn't really required. The genome indexing can be done separately before running the workflow. 
+The workflow starts with alignment step and completes at annotation step by creating annotate.vcf file. So that means initial steps such as quality checks including trimming and genome indexing is missing . As the aim of this project is to work on synthetic datasets, and hence, quaility check wasn't really required. The genome indexing can be done separately before running the workflow. 
 
 
 # Input:
