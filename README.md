@@ -55,11 +55,9 @@ FREEBAYES
 
 snpEff
 
-# Nextflow
-Before srunning the workflow, make sure to configure the nextflow and then docker, It can be challenging sometime especially if you are new to nextflow and docker. Once you have set up your system with both, it is very easy to run your workflows.
-Further, snpEff.jar, datasets, index files, and .config files need to be in the same directory or specfify the path in the workflow. Then, run main.nf in the terminal. It is very likely that you will get errors at different steps when the running the workflow first time, just look at them carefully, most of them are due to incomplete configuration of nextflow or docker, and your machine configuration also matters when working on large datasets. This is a very simple workflow, but you are always welcome to text me if stuck at any point. 
+Before running the workflow, it is very important to ensure that Nextflow and Docker are correctly installed and configured on the system. For the first time users, the initial set up can be challenging sometimes, however, once configured, running workflows become straightforward and reproducible. The files such as snpEff.jar, sample datasets, index files, and configuration files must either placed in the same directory or have their paths specified within the workflow or configuration files. After completing the set up, the workflow can be executed by running main.nf from the terminal. During the first execution, it is quite normal to get errors. Most of them are due to incomplete Nextflow or Docker configuration, missing dependencies or your machine related limitations. 
 
-The workflow starts with alignment step and completes at annotation step by creating annotate.vcf file. So that means initial steps such as quality checks including trimming and genome indexing is missing . As the aim of this project is to work on synthetic datasets, and hence, quaility check wasn't really required. The genome indexing can be done separately before running the workflow. 
+This workflow begins with the read alignment step and concludes with tvariant annotation, generating annotated VCF file as the final output. Preliminary steps such as read quality control, trimming, and reference genome indexing are intentionally excluded because the primary objective of this project is to work with synthetic datasets, where quality control is not really required. Reference genome indexing should be completed seprately prior to running the workflow.
 
 
 # Input:
@@ -75,5 +73,3 @@ sorted and indexed BAM files
 Variant - VCF files
 
 Annotated VCF files
-
-Full results are not included due to their large file sizes. Only vcf files reperesenting a small subset of the results are uploaded for demonstration purposes.
