@@ -66,10 +66,13 @@ Paired-end FASTQ file
 Reference genome FASTA
 
 # Output:
-sam file
 
-sorted and indexed BAM files
+The output will show up in the results and work folder (based on the folder specified in your workflow code)
 
-Variant - VCF files
+sam file (alignment folder)
 
-Annotated VCF files
+sorted and indexed BAM files (sorted folder)
+
+Variant - VCF files (vcf folder)
+
+Annotated VCF files (annotated folder)
