@@ -22,13 +22,13 @@ The workflow is suitable for generating annotated variant calls from short-read 
    
       Removal of low-quality bases and adapters
 
-   step 1,2,3 were not performed as they were not required for this project. 
+   step 2,3 were not performed as they were not required for this project. 
    
 4. Alignment:
    
-      FASTQ to SAM using BWA-MEM
+      FASTQ to SAM using BWA-MEM 
    
-5. Post-alignment Processing:
+5. Post-alignment Processing samtools: 
     
       SAM to BAM conversion
    
@@ -36,24 +36,25 @@ The workflow is suitable for generating annotated variant calls from short-read 
    
 6. Variant Calling:
     
-      SNP and small INDEL detection using FreeBayes
+      SNP and small INDEL detection using FreeBayes 
     
 7. Variant Annotation:
     
-      Functional annotation using SnpEff
+      Functional annotation using SnpEff 
 
 # Tools used
-Nextflow DSL2
 
-Docker
+Nextflow
 
-BWA-MEM
+Docker 
 
-SAMTOOLS
+BWA-MEM (https://github.com/lh3/bwa)
 
-FREEBAYES
+SAMTOOLS (https://github.com/samtools/samtools)
 
-snpEff
+FREEBAYES (https://github.com/freebayes/freebayes)
+
+snpEff (https://pcingola.github.io/SnpEff/download/)
 
 Before running the workflow, it is very important to ensure that Nextflow and Docker are correctly installed and configured on the system. For the first time users, the initial set up can be challenging sometimes, however, once configured, running workflows become straightforward and reproducible. The files such as snpEff.jar, sample datasets, index files, and configuration files must either placed in the same directory or have their paths specified within the workflow or configuration files. After completing the set up, the workflow can be executed by running main.nf from the terminal. During the first execution, it is quite normal to get errors. Most of them are due to incomplete Nextflow or Docker configuration, missing dependencies or your machine related limitations. 
 
