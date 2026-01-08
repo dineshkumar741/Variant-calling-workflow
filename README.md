@@ -73,5 +73,3 @@ sorted and indexed BAM files
 Variant - VCF files
 
 Annotated VCF files
-
-Further analysis can be continued using bcf tools. 
