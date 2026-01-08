@@ -44,9 +44,9 @@ The workflow is suitable for generating annotated variant calls from short-read 
 
 # Tools used
 
-Nextflow
+Nextflow (https://www.nextflow.io/docs/latest/index.html)
 
-Docker 
+Docker (https://docs.docker.com/engine/install/linux-postinstall/)
 
 BWA-MEM (https://github.com/lh3/bwa)
 
