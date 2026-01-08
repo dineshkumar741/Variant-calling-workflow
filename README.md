@@ -1,11 +1,10 @@
 # Task-3
 
 # A simplified Nextflow pipeline for variant calling
-This repository contains a Nextflow-based bioinformatics workflow for processing raw paired-end FASTQ files through alignment, variant calling, and annotation.
+This repository contains a Nextflow - workflow for processing raw paired-end FASTQ files through alignment, variant calling, and annotation using open-source tools.
 The pipeline is containerized using Docker to ensure reproducibility, portability, and ease of use.
 
 The workflow is suitable for generating annotated variant calls from short-read sequencing data and can be integrated into larger data portals or downstream analysis systems.
-
 
 
 # Workflow
@@ -77,3 +76,23 @@ sorted and indexed BAM files (sorted folder)
 Variant - VCF files (vcf folder)
 
 Annotated VCF files (annotated folder)
+
+# Disclaimer:
+
+This workflow integrates open-source bioinformatics tools and softwares, and the credit is fully attributed to their respective authors.
+
+
+# References: 
+
+Nextflow - https://www.nextflow.io/docs/latest/index.html
+
+Docker - https://docs.docker.com/engine/install/linux-postinstall/
+
+BWA-MEM - https://github.com/lh3/bwa
+
+SAMTOOLS https://github.com/samtools/samtools
+
+FREEBAYES - https://github.com/freebayes/freebayes
+
+snpEff - https://pcingola.github.io/SnpEff/download/
+
